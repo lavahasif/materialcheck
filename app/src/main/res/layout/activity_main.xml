@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="fonts/auto.ttf"
+        android:text="Hello World!" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="fonts/audio.ttf"
+
+        android:text="master1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/disabled_material_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="6dp"
+        android:enabled="false"
+        android:text="master1"
+        android:textColor="@color/design_default_color_background"
+        app:cornerRadius="25dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_unelevated_button"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="master1" />
+
+    <GridLayout
+
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:columnCount="2"
+        android:fontFamily="fonts/auto.ttf"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Material 2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_button2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Material 2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_unelevated_button3"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="fonts/auto.ttf"
+            android:text="Material 2" />
+        <TextView
+            android:text="Hellossss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Theme.MaterialComponents.Light"/> <TextView
+            android:text="Hellossss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Theme.MaterialComponents.Light"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_text_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Material3 weight"
+            android:textFontWeight="20"
+
+            android:fontFamily="fonts/Astloch.ttf"
+
+            app:strokeColor="@color/colorPrimary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_text_button1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="fonts/auto.ttf"
+            android:text="Materialtext" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_icon_button"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="85dp"
+            android:fontFamily="fonts/Astloch.ttf"
+            android:text="Materialico"
+            android:textCursorDrawable="@android:drawable/ic_menu_search"
+            app:icon="@android:drawable/btn_star_big_on"
+            app:iconSize="15dp"
+
+            />
+
+        <Space />
+    </GridLayout>
+
+</LinearLayout>
